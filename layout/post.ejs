@@ -38,6 +38,9 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
             <div class="markdown-body">
               <%- inject_point('postMarkdownBegin') %>
               <%- page.content %>
+              <% if(theme.post.post_bottom_custom.enable) { %>
+                <%- theme.post.post_bottom_custom.content %>
+              <% } %>
               <%- inject_point('postMarkdownEnd') %>
             </div>
             <hr/>

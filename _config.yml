@@ -535,6 +535,12 @@ post:
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
   default_index_img:
 
+  # 文章结束后的自定义内容
+  # custom the end of your article
+  post_bottom_custom:
+    enable: false
+    content:
+
   # 文章标题下方的元信息
   # Meta information below title
   meta:
